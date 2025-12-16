@@ -148,6 +148,9 @@
                 message = 'Code de l\'orfèvre invalide.';
             }
             document.getElementById('resultat').textContent = message;
+            if (message) {
+                document.getElementById('orfèvreCode').value = '';
+            }
         }
     </script>
 </body>
