@@ -139,6 +139,7 @@
                     message = 'l\'objet vaut ' + valeur + '€';
                     valeurLabel.style.display = 'none';
                     valeurInput.style.display = 'none';
+                    document.getElementById('orfèvreCode').value = '';
                 } else {
                     message = 'Veuillez entrer une valeur souhaitée.';
                 }
@@ -148,9 +149,6 @@
                 message = 'Code de l\'orfèvre invalide.';
             }
             document.getElementById('resultat').textContent = message;
-            if (message) {
-                document.getElementById('orfèvreCode').value = '';
-            }
         }
     </script>
 </body>
