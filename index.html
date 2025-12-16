@@ -7,28 +7,39 @@
     <style>
         body {
             background: linear-gradient(135deg, #000000, #FFD700, #000000);
-            color: #FFD700;
+            color: #FFFFFF; /* Changé pour plus de contraste */
             font-family: 'Georgia', serif;
             text-align: center;
             padding: 50px;
             min-height: 100vh;
+            position: relative;
         }
+        .decoration {
+            position: absolute;
+            font-size: 2em;
+            opacity: 0.7;
+        }
+        .mask1 { top: 10%; left: 10%; }
+        .mask2 { top: 10%; right: 10%; }
+        .diamond1 { bottom: 10%; left: 15%; }
+        .diamond2 { bottom: 10%; right: 15%; }
         h1 {
             font-size: 3em;
-            text-shadow: 2px 2px 4px #000;
+            text-shadow: 2px 2px 4px #000, 0 0 10px #FFD700; /* Ombre renforcée pour contraste */
             border-bottom: 2px solid #FFD700;
             padding-bottom: 10px;
         }
         p {
             font-size: 1.2em;
             margin: 20px 0;
+            text-shadow: 1px 1px 2px #000; /* Ajout d'ombre pour contraste */
         }
         input {
             padding: 10px;
             font-size: 1em;
             border: 2px solid #FFD700;
             background: #000;
-            color: #FFD700;
+            color: #FFFFFF; /* Blanc pour contraste */
             border-radius: 5px;
         }
         button {
@@ -48,10 +59,15 @@
             font-size: 1.5em;
             margin-top: 20px;
             font-weight: bold;
+            text-shadow: 1px 1px 2px #000; /* Ombre pour contraste */
         }
     </style>
 </head>
 <body>
+    <div class="decoration mask1">🎭</div>
+    <div class="decoration mask2">🎭</div>
+    <div class="decoration diamond1">💎</div>
+    <div class="decoration diamond2">💎</div>
     <h1>Estimation des objets</h1>
     <p>Entrez le code de l'objet :</p>
     <input type="text" id="codeInput" placeholder="Entrez le code">
