@@ -135,8 +135,8 @@
             } else if (orfèvre === 'fausseestimation') {
                 valeurLabel.style.display = 'block';
                 valeurInput.style.display = 'block';
-                valeurInput.value = ''; // Vider le champ pour permettre une nouvelle saisie
                 const valeur = valeurInput.value;
+                valeurInput.value = ''; // Vider après lecture pour permettre modification future
                 if (valeur) {
                     message = 'l\'objet vaut ' + valeur + '€';
                     valeurLabel.style.display = 'none';
